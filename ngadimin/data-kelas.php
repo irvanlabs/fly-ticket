@@ -259,7 +259,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div>
 					
 					<h2>Data Kelas</h2>
-					<a href="#" class="btn btn-primary">Tambah</a></li>
+					<a href="tambah-data-kelas.php" class="btn btn-primary">Tambah</a></li>
 					
 					</div>
 					  

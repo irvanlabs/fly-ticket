@@ -257,7 +257,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!--query php-->
 				<?php
 						$id = $_GET['id'];
-						 $sql = 'SELECT * FROM kelas WHERE id='$id'';
+						 $sql = "SELECT * FROM kelas WHERE id='$id'";
 						 $query = mysql_query($sql);
 						$row = mysql_fetch_assoc($query);
 						
@@ -265,7 +265,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!--------->
 				<div class="grid-form1">
 					<h3 id="forms-controls-static">Edit Data</h3>
-					<form class="form-horizontal" action="action-tambah.php" method="post">
+					<form class="form-horizontal" action="action-edit-kelas.php?id=<?php echo $id ?>" method="post">
 					  <div class="form-group" >
 						<label for="kodekelas" class="col-sm-2 control-label hor-form">Kode Kelas</label>
 						<div class="col-sm-10">
@@ -279,7 +279,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					  </div>
 					  <div align="center">
-					<input type="submit" value="Tambah" class="btn btn-primary">
+					<input type="submit" value="UPDATE" class="btn btn-primary">
 				
 					</div>
 					</form>
